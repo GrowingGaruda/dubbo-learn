@@ -1,0 +1,20 @@
+dubbo:
+  application:
+#    id: my-dubbo-provider-id
+    name: my-dubbo-provider
+  server: true
+  registry:
+#    address: "multicast://224.5.6.19:1244?unicast=false"
+    address: "multicast://224.5.6.7:1234?unicast=false"
+  protocol:
+    name: dubbo
+    prot: -1
+#    host: 192.168.232.1
+      #   reference:
+        #     loadbalance: roundrobin #轮询机制
+        #loadbalance: random #随机机制
+        #loadbalance: leastactive #最少活跃调用数机制
+  provider:
+   threads: 10
+   threadpool: fixed
+

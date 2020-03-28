@@ -1,0 +1,14 @@
+spring:
+ profiles:
+    #激活开发环境
+  active: dev
+server:
+ port: 8001
+
+#mybatis  
+#mybatis:
+#  mapper-locations: classpath*:mapper/*.xml
+#  type-aliases-package: com.qykj.spider.man.dao
+
+
+
